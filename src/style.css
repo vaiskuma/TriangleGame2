@@ -1,0 +1,16 @@
+
+h1 {
+  font-family: 'Satisfy', cursive; 
+  text-align: right;
+}
+
+p {
+    margin-left: 80px;
+}
+
+#giphy {
+    display: none;
+    width:480;
+    height:384;
+}
+@import url('');
