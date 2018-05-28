@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="http://d5wfroyti11sa.cloudfront.net/prod/client/ts-10.0.23.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
+    <link rel="stylesheet" src="style.css" />
+
+    <script src="http://d5wfroyti11sa.cloudfront.net/prod/client/ts-10.0.23.min.js"></script>
+    <script src="main.js"></script>
+
+    <title> Triangle game</title>
+
+</head>
+
+<body>
+
+    <h1 style="font-family: 'Satisfy', cursive;">
+    Get your Triangle type here!
+</h1>
+    <header data-ts="TopBar">Get your Triangle type here!</header>
+
+    <div class="container" style=" display: flex;
+background-color: DodgerBlue;">
+
+        <form data-ts="Form" action="" name="sides" style="margin-left:60px;">
+            <fieldset>
+                <p>Enter a First side of a Triangle:
+                    <input type="number" name="A">
+                    <br />
+                </p>
+                <p>Enter Other side:
+                    <input type="number" name="B">
+                    <br />
+                </p>
+                <p>Enter Dark Side of Triangle:
+                    <input type="number" name="C">
+                    <br />
+                </p>
+                    <input type="button" style ="width:20ex;background-color:darkseagreen;display: inline-block;" value="What's your type?"
+                    onclick="triangle();">
+            </fieldset>
+        </form>
+
+        <p id="answer" style="font-family: 'Satisfy', cursive;"></p>
+        <p id="answerImg"></p>
+        <div>
+        <iframe src="https://giphy.com/embed/nzjFbcyOuVZfi" style="display:none;" id="giphy" width="360px%" height="320px%"></iframe>
+        <button onclick="cancelation();">Ok</button>
+    </div>
+</body>
+
+</html>

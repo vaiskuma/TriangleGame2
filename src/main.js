@@ -43,7 +43,7 @@ function errorHandle(A, B, C) {
     if ((AB < C) || (AC < B) || (BC < A)) {
 
         ts.ui.Notification.error("These numbers can not form a triangle.");
-        return document.getElementById("giphy-embed").style.display = 'block';
+        return document.getElementById("giphy").style.display = 'block';
     } else {
         getTriangleType(A, B, C);
     }
@@ -53,7 +53,7 @@ function errorHandle(A, B, C) {
 }
 
 function cancelation() {
-    document.getElementById("giphy-embed").style.display = 'none';
+    document.getElementById("giphy").style.display = 'none';
 }
 
 
